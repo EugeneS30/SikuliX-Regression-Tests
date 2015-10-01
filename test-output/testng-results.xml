@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="9232" started-at="2015-09-12T22:56:02Z" finished-at="2015-09-12T22:56:12Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="9232" started-at="2015-09-12T22:56:02Z" finished-at="2015-09-12T22:56:12Z">
+      <class name="com.eugenes.functional.dev.TestClass1">
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="4904" started-at="2015-09-12T22:56:02Z" finished-at="2015-09-12T22:56:07Z">
+        </test-method>
+        <test-method status="PASS" signature="test1()" name="test1" duration-ms="1927" started-at="2015-09-12T22:56:07Z" finished-at="2015-09-12T22:56:09Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="2397" started-at="2015-09-12T22:56:09Z" finished-at="2015-09-12T22:56:12Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

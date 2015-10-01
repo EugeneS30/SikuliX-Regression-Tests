@@ -22,6 +22,10 @@
 			<version>1.1.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-firefox-driver</artifactId>
 		</dependency>
@@ -42,16 +46,15 @@
 			<artifactId>cucumber-junit</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.testng</groupId>
-			<artifactId>testng</artifactId>
-			<scope>test</scope>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<scope>provided</scope>
 		</dependency>
-
 	</dependencies>
 	<parent>
 		<groupId>com.eugenes</groupId>
-		<artifactId>eugenes-bdd-parent</artifactId>
-		<version>0.0.2</version>
-		<relativePath>../eugenes-bdd-parent/pom.xml</relativePath>
+		<artifactId>eugenes-bdd-framework</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../eugenes-bdd-framework/pom.xml</relativePath>
 	</parent>
 </project>
