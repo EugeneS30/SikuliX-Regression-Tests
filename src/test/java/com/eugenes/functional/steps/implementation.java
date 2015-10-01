@@ -1,4 +1,4 @@
-package com.eugenes.functional.dev;
+package com.eugenes.functional.steps;
 
 import cucumber.api.java.en.Given;
 

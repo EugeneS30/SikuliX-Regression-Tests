@@ -1,4 +1,4 @@
-package com.eugenes.functional.dev;
+package com.eugenes.functional;
 
 import org.junit.runner.RunWith;
 
@@ -19,16 +19,10 @@ import cucumber.api.junit.Cucumber;
                  features = {"classpath:sikulix_features"}, 
                  format = {"json:target/cucumber-dev/cucumber.json", "pretty"}, 
                  monochrome = true, 
-//                 tags = {"@wip"}, 
                  glue = {
-                        "com.eugenes.functional.dev",
-                        "au.com.permeance.test.functional.hook", 
-                        "au.com.permeance.test.functional.stepdef",
-                        "au.edu.wa.det.connect.test.functional.steps_dev", 
-                        "au.edu.wa.det.connect.test.functional.steps",
-                        "au.com.permeance.testing.functional.liferay", 
-                        "au.edu.wa.det.connect.test.functional.hook",
-                        "au.com.permeance.test.functional.steps"})
+                        "com.eugenes.functional.steps"
+                        }
+                )
 
 public class FunctionalDevIT {
 
