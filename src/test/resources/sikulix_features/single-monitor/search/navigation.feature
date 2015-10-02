@@ -1,5 +1,5 @@
-@Classes @Discussions
-Feature: Discussions
+@Navigation
+Feature: Navigation
 
   Background: An offensive post has been added to a discussion in a class
     Given I have navigated to the website
