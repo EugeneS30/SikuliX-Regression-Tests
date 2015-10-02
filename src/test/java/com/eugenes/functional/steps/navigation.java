@@ -1,5 +1,6 @@
 package com.eugenes.functional.steps;
 
+
 import org.springframework.stereotype.Component;
 
 import com.eugenes.functional.configuration.BddGlue;
@@ -12,13 +13,13 @@ import cucumber.api.java.en.When;
 @Component
 public class navigation extends BddGlue {
     
-    @Given("^I have navigated to the website:$")
-    public void i_have_navigated_to_the_website() throws Exception {
+    
+    @Given("^I have navigated to website \"(.*?)\"$")
+    public void i_have_navigated_to_the_website(String siteName) throws Exception {
 
-        System.out.println("navigating");
+        System.out.println("navigating to" + siteName);
 
     }
     
-
     
 }
