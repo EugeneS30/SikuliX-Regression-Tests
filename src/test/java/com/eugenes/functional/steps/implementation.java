@@ -1,8 +1,13 @@
 package com.eugenes.functional.steps;
 
+import org.springframework.stereotype.Component;
+
+import com.eugenes.functional.configuration.BddGlue;
+
 import cucumber.api.java.en.Given;
 
-public class implementation {
+@Component
+public class implementation extends BddGlue {
     
     @Given("^I run scenario one$")
     public void i_run_scenario_one() throws Throwable {
