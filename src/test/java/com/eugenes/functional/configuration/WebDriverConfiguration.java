@@ -52,7 +52,7 @@ import com.eugenes.functional.configuration.RemoteFluentWait;
 //import au.com.permeance.test.functional.selenium.safari.SafariBrowserSupport;
 //import au.com.permeance.test.functional.spring.PageObjectBeanPostProcessor;
 
-@ComponentScan({"au.com.permeance.test.functional"})
+@ComponentScan({"com.eugenes.functional"})
 @Configuration
 @PropertySource({"classpath:feature.properties", "classpath:feature-ext.properties"})
 @EnableAspectJAutoProxy(proxyTargetClass = true)
