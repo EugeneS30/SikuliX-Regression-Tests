@@ -1,8 +1,8 @@
 @Search
 Feature: Search
 
-  Background: An offensive post has been added to a discussion in a class
-   Given I have performed some background 
+  Background: Navigate to the website
+   Given I have navigated to website "www.sikulix.com" 
     
   Scenario: Add a Discussion group as a teacher
     When I run scenario one
