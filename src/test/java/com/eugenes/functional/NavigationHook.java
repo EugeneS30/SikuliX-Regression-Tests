@@ -1,18 +1,20 @@
 package com.eugenes.functional;
 
-import javax.inject.Inject;
+import lombok.extern.slf4j.Slf4j;
 
 import com.eugenes.functional.configuration.BddGlue;
-import com.eugenes.functional.Portal;
+
 import cucumber.api.java.Before;
 
+@Slf4j
 public class NavigationHook extends BddGlue {
 
-    @Inject
-    private Portal portal;
+//    @Inject
+//    private Portal portal;
 
     @Before
     public void navigate() {
-        portal.navigate();
+        log.info("heeello");
+//        portal.navigate();
     }
 }
