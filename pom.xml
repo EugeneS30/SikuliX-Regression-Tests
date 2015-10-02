@@ -3,6 +3,12 @@
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>SikuliX-Regression-Tests</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<parent>
+		<groupId>com.eugenes</groupId>
+		<artifactId>eugenes-parent</artifactId>
+		<version>0.0.1</version>
+		<relativePath>../eugenes-parent/pom.xml</relativePath>
+	</parent>
 	<repositories>
 		<repository>
 			<id>sonatype-nexus-snapshots</id>
@@ -34,6 +40,14 @@
 			<artifactId>selenium-chrome-driver</artifactId>
 		</dependency>
 		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-support</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-htmlunit-driver</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-core</artifactId>
 		</dependency>
@@ -48,13 +62,30 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+
 		</dependency>
 	</dependencies>
-	<parent>
-		<groupId>com.eugenes</groupId>
-		<artifactId>eugenes-bdd-framework</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-		<relativePath>../eugenes-bdd-framework/pom.xml</relativePath>
-	</parent>
+
 </project>
