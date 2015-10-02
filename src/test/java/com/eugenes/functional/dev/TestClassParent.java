@@ -16,6 +16,8 @@ import org.sikuli.script.ImageLocator;
 import org.sikuli.script.ImagePath;
 import org.sikuli.script.Screen;
 
+import com.eugenes.functional.tests.SimpleWait;
+
 @RunWith(Suite.class)
 @SuiteClasses({SimpleWait.class})
 public class TestClassParent {
