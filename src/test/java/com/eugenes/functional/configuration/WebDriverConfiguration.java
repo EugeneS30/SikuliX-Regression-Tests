@@ -1,6 +1,6 @@
 package com.eugenes.functional.configuration;
 
-import static com.gargoylesoftware.htmlunit.BrowserVersion.INTERNET_EXPLORER_9;
+//import static com.gargoylesoftware.htmlunit.BrowserVersion.INTERNET_EXPLORER_9;
 import static java.lang.String.format;
 
 import java.net.MalformedURLException;
@@ -23,14 +23,14 @@ import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
+//import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.Augmenter;
 import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.FileDetector;
 import org.openqa.selenium.remote.LocalFileDetector;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.safari.SafariOptions;
+//import org.openqa.selenium.safari.SafariOptions;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -246,22 +246,22 @@ public class WebDriverConfiguration {
 
     }
 
-    @Configuration
-    @Profile({"htmlunit"})
-    public static class HtmlUnitConfiguration {
-
-        @Bean(destroyMethod = "quit")
-        public HtmlUnitDriver htmlUnitDriver() {
-
-            return new HtmlUnitDriver(INTERNET_EXPLORER_9);
-        }
-
-        @Bean
-        public WebDriverEnvironment localEnvironment() {
-            return new LocalWebDriverEnvironment();
-        }
-
-    }
+//    @Configuration
+//    @Profile({"htmlunit"})
+//    public static class HtmlUnitConfiguration {
+//
+//        @Bean(destroyMethod = "quit")
+//        public HtmlUnitDriver htmlUnitDriver() {
+//
+//            return new HtmlUnitDriver(INTERNET_EXPLORER_9);
+//        }
+//
+//        @Bean
+//        public WebDriverEnvironment localEnvironment() {
+//            return new LocalWebDriverEnvironment();
+//        }
+//
+//    }
 
     @PostConstruct
     public void handleFlakyIeDriver() {
